@@ -1,0 +1,73 @@
+.albums {
+  width: 100%;
+  background-color: white;
+}
+
+.album-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .album-items {
+    margin-left: 90px;
+    margin-right: 40px;
+  }
+}
+.album {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  border-radius: 1rem;
+  padding: 1rem;
+  max-width: 200px;
+}
+
+.album:hover {
+  transition: all 0.2s;
+  transform: translate(5px, 5px);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.album-list {
+  text-decoration: none;
+  list-style: none;
+}
+.album-list h2 {
+  font-size: 20px;
+}
+.album-list img {
+  width: 170px;
+  height: 170px;
+  display: block;
+  border-radius: 8px;
+}
+
+.title {
+  list-style: none;
+  text-transform: lowercase;
+  text-transform: capitalize;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: none;
+}
+
+.fas {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  position: fixed;
+  padding: 4px;
+  color: white;
+  opacity: 1;
+}
+.fas:hover {
+  background: rgba(0, 0, 0, 1);
+}

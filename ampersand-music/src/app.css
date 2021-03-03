@@ -1,0 +1,50 @@
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #44023e,
+    #5c0259,
+    #740476,
+    #8b0b96,
+    #a216b8,
+    #b01ac9,
+    #bf1fda,
+    #ce23ec,
+    #da1fee,
+    #e71bf0,
+    #f315f2,
+    #ff0df4
+  );
+  background-repeat: no-repeat;
+}
+App {
+  text-align: center;
+  height: 5000px;
+}
+
+.scrollTop {
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  align-items: center;
+  height: 20px;
+  font-size: 30px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+}
+
+.scrollTop:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
